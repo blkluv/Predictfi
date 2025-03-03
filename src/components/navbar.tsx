@@ -1,4 +1,4 @@
-import { ConnectButton, darkTheme, lightTheme, useActiveAccount } from "thirdweb/react";
+import { ConnectButton, darkTheme, useActiveAccount } from "thirdweb/react";
 import { client } from "@/app/client";
 import { sepolia } from "thirdweb/chains";
 import { inAppWallet } from "thirdweb/wallets";
