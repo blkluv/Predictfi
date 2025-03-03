@@ -8,6 +8,7 @@ import { Navbar } from './navbar'
 import { MarketCardSkeleton } from './market-card-skeleton'
 import { Footer } from "./footer"
 import { Lock, Globe, User } from 'lucide-react'
+import Image from 'next/image'
 
 export function EnhancedPredictionMarketDashboard() {
     const { data: marketCount, isLoading: isLoadingMarketCount } = useReadContract({
@@ -26,10 +27,13 @@ export function EnhancedPredictionMarketDashboard() {
             <div className="flex-grow container mx-auto p-4">
                 <Navbar />
                 <div className="mb-4">
-                    <img 
+                    <Image 
                         src="https://t4.ftcdn.net/jpg/08/63/37/05/240_F_863370595_dNemGSt2gktrVy12zmjAYJLUDYyXogZC.jpg" 
                         alt="Predictify Background" 
                         className="w-full h-auto rounded-lg shadow-lg filter brightness-75" 
+                        layout="responsive" 
+                        width={500} 
+                        height={300} 
                     />
                 </div>
                 <div className="mb-4">
