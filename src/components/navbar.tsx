@@ -74,7 +74,7 @@ export function Navbar() {
                     }}
                     detailsButton={{
                         displayBalanceToken: {
-                            [sepolia.id]: "0x4D9604603527322F44c318FB984ED9b5A9Ce9f71"
+                            [sepolia.id]: process.env.NEXT_PUBLIC_TOKEN_ADDRESS || "0xC7EB879dAD627cAc773d9502a80938ca3b89e90e"
                         }
                     }}
                     wallets={[
