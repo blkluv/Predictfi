@@ -62,7 +62,7 @@ export function MarketSharesDisplay({
     const displayWinningsB = toFixed(Number(toEther(winnings.B)), 2);
 
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 dark:bg-gray-800 dark:text-white">
             <div className="w-full text-sm text-muted-foreground">
                 Your shares: {market.optionA} - {Math.floor(parseInt(toEther(sharesBalance?.optionAShares)))}, {market.optionB} - {Math.floor(parseInt(toEther(sharesBalance?.optionBShares)))}
             </div>

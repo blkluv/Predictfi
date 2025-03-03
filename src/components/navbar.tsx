@@ -1,4 +1,4 @@
-import { ConnectButton, lightTheme, useActiveAccount } from "thirdweb/react";
+import { ConnectButton, darkTheme, lightTheme, useActiveAccount } from "thirdweb/react";
 import { client } from "@/app/client";
 import { sepolia } from "thirdweb/chains";
 import { inAppWallet } from "thirdweb/wallets";
@@ -42,7 +42,7 @@ export function Navbar() {
     };
     
     return (
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex justify-between items-center mb-6 dark:bg-gray-900 dark:text-white">
             <h1 className="text-2xl font-bold">Predictfi</h1>
             <div className="items-center flex gap-2">
                 {account && (
@@ -50,6 +50,7 @@ export function Navbar() {
                         onClick={handleClaimTokens}
                         disabled={isClaimLoading}
                         variant="outline"
+                        className="bg-black text-white dark:bg-gray-800 dark:text-white hover:bg-gray-700"
                     >
                         {isClaimLoading ? (
                             <>
@@ -63,7 +64,7 @@ export function Navbar() {
                 )}
                 <ConnectButton 
                     client={client} 
-                    theme={lightTheme()}
+                    theme={darkTheme()}
                     chain={sepolia}
                     connectButton={{
                         style: {

@@ -169,7 +169,7 @@ export function MarketBuyInterface({ marketId, market }: MarketBuyInterfaceProps
                     // Initial option selection buttons
                     <div className="flex justify-between gap-4 mb-4">
                         <Button 
-                            className="flex-1" 
+                            className="flex-1 bg-black text-white dark:bg-gray-800 dark:text-white hover:bg-gray-700" 
                             onClick={() => handleBuy('A')}
                             aria-label={`Vote ${market.optionA} for "${market.question}"`}
                             disabled={!account}
@@ -177,7 +177,7 @@ export function MarketBuyInterface({ marketId, market }: MarketBuyInterfaceProps
                             {market.optionA}
                         </Button>
                         <Button 
-                            className="flex-1"
+                            className="flex-1 bg-red-500 text-white hover:bg-red-400"
                             onClick={() => handleBuy('B')}
                             aria-label={`Vote ${market.optionB} for "${market.question}"`}
                             disabled={!account}

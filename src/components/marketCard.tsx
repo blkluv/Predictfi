@@ -8,6 +8,7 @@ import { MarketResolved } from "./market-resolved";
 import { MarketPending } from "./market-pending";
 import { MarketBuyInterface } from "./market-buy-interface";
 import { MarketSharesDisplay } from "./market-shares-display";
+import { Progress } from "./ui/progress";
 
 // Props for the MarketCard component
 // index is the market id
@@ -98,7 +99,7 @@ export function MarketCard({ index, filter }: MarketCardProps) {
     }
 
     return (
-        <Card key={index} className="flex flex-col">
+        <Card className="flex flex-col transition-transform duration-200 hover:scale-105 dark:bg-gray-800 dark:text-white">
             {isLoadingMarketData ? (
                 <MarketCardSkeleton />
             ) : (
@@ -108,6 +109,13 @@ export function MarketCard({ index, filter }: MarketCardProps) {
                         <CardTitle>{market?.question}</CardTitle>
                     </CardHeader>
                     <CardContent>
+                        <div className="mb-4">
+                            <div className="flex justify-between mb-2">
+                                <span className="bg-gray-200 h-4 w-1/4" />
+                                <span className="bg-gray-200 h-4 w-1/4" />
+                            </div>
+                            <Progress value={0} className="h-2 bg-gray-200" />
+                        </div>
                         {market && (
                             <MarketProgress 
                                 optionA={market.optionA}

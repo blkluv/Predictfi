@@ -21,13 +21,13 @@ export function EnhancedPredictionMarketDashboard() {
     ));
 
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col dark:bg-background dark:text-foreground">
             <div className="flex-grow container mx-auto p-4">
                 <Navbar />
                 <div className="mb-4">
                     <img 
-                        src="https://placehold.co/800x300" 
-                        alt="Placeholder Banner" 
+                        src="https://t4.ftcdn.net/jpg/08/63/37/05/240_F_863370595_dNemGSt2gktrVy12zmjAYJLUDYyXogZC.jpg" 
+                        alt="Predictify Background" 
                         className="w-full h-auto rounded-lg" 
                     />
                 </div>
