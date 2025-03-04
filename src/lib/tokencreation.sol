@@ -24,7 +24,7 @@ contract SimpleToken is ERC20, Ownable {
         }
     }
 
-    // Override the transfer function to include additional logic if needed
+    // Override the transfer function to  help include additional logic if needed
     function transfer(address recipient, uint256 amount) public override returns (bool) {
         return super.transfer(recipient, amount);
     }
