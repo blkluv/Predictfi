@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PredictFi
+
+PredictFi is a blockchain-based prediction market platform that enables users to forecast real-world events and transact using ERC20 tokens. Built with **Next.js** and integrated with **ThirdWeb**, PredictFi ensures transparency, security, and decentralization in prediction-based transactions.
+
+## Features
+
+- **Decentralized Prediction Market** – Users can predict outcomes in various categories, including sports, politics, and finance.
+- **Blockchain-Powered Transactions** – Smart contracts handle predictions and payouts, ensuring fairness and immutability.
+- **ERC20 Token Integration** – Transactions and rewards are conducted in standard ERC20 tokens.
+- **Seamless User Experience** – Built with **Next.js** for a fast, responsive, and scalable interface.
+- **ThirdWeb Integration** – Simplifies blockchain interactions, making deployment and token management efficient.
+
+## Technologies Used
+
+- **Next.js** – React-based framework for server-side rendering and optimized performance.
+- **Solidity** – Smart contract development language for Ethereum.
+- **ThirdWeb** – Simplifies blockchain deployment and interactions.
+- **ERC20 Standard** – Ensures compatibility with Ethereum-based tokens.
+- **Foundry (Forge)** – Smart contract testing and deployment framework.
+- **Tailwind CSS** – Modern utility-first styling for a clean UI.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/en/download/) (LTS version recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+Clone the repository and install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/predictfi.git
+cd predictfi
+npm install  # or yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Development Server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the development server with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev  # or yarn dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) in your browser to access the application.
+
+## Smart Contract Deployment
+
+PredictFi utilizes Solidity smart contracts for secure predictions and payouts. Deploy contracts using ThirdWeb:
+
+```bash
+yarn deploy  # Deploy contracts to the blockchain
+```
+
+Ensure you have a valid Ethereum wallet (e.g., MetaMask) connected.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs) – Official Next.js documentation.
+- [ThirdWeb Docs](https://portal.thirdweb.com/) – Learn about deploying smart contracts easily.
+- [Ethereum Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/) – Understand Ethereum's smart contract ecosystem.
+- [ERC20 Token Standard](https://eips.ethereum.org/EIPS/eip-20) – Learn about ERC20 tokens and their functionalities.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+PredictFi is optimized for deployment on **Vercel**. To deploy:
 
-## Deploy on Vercel
+```bash
+git push origin main  # Push changes to the main branch
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Then, connect your repository to [Vercel](https://vercel.com/) for automated deployment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For inquiries or contributions, please contact [your email or GitHub profile].
