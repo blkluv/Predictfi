@@ -5,7 +5,7 @@ PredictFi is a blockchain-based prediction market platform that enables users to
 ## Features
 
 - **Decentralized Prediction Market** – Users can predict outcomes in various categories, including sports, politics, and finance.
-- **Blockchain-Powered Transactions** – Smart contracts handle predictions and payouts, ensuring fairness and immutability.
+- **Blockchain-Powered Transactions** – Smart contracts handle predictions and payouts, ensuring complete fairness and immutability.
 - **ERC20 Token Integration** – Transactions and rewards are conducted in standard ERC20 tokens.
 - **Seamless User Experience** – Built with **Next.js** for a fast, responsive, and scalable interface.
 - **ThirdWeb Integration** – Simplifies blockchain interactions, making deployment and token management efficient.
